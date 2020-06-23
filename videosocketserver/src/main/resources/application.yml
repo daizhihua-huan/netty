@@ -1,0 +1,43 @@
+server:
+  port: 10003
+
+
+path:
+  D:\linux\
+
+#swagger:
+#  markdowns: classpath:markdown/*
+#  basic:
+#    enable: false
+#    username: zhangsan
+#    password: 123456
+
+
+
+
+
+
+spring:
+  thymeleaf:
+    cache: false
+    check-template-location: true
+    suffix: .html
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    mode: HTML5
+    prefix: classpath:/thymeleaf/
+
+  resources:
+    static-locations:   classpath:/thymeleaf/ ,classpath:/META-INF/resources/ ,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/json/,classpath:/lib/,classpath:/markdown/,classpath:/pages/
+
+
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://47.92.68.127:3306/video?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+

@@ -1,0 +1,66 @@
+#sumbody {
+    padding-top: 90px;
+    margin: 0px auto;
+}
+
+.form-horizontal {
+    background: #fff;
+    padding-bottom: 200px;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.heading {
+
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 35px 0;
+    border-bottom: 3px solid #f0f0f0;
+    margin-bottom: 10px;
+}
+
+
+.form-horizontal .form-group i {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    font-size: 17px;
+    color: #c8c8c8;
+    transition: all 0.5s ease 0s;
+
+}
+
+.form-horizontal .form-control {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    box-shadow: none;
+    padding: 0 20px 0 45px;
+    height: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+.msg {
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    font-size: 12px;
+    color: red;
+    padding-top: 12px;
+    padding-left: 5px;
+    text-align: left;
+
+
+}
+
+#img {
+    padding-bottom: 1px;
+    margin-top: 15px;
+
+}
+
+#loginsubmit {
+    margin-right: 67px;
+}

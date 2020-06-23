@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>管理员列表-WeAdmin Frame型后台管理系统-WeAdmin 1.0</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/weadmin.css">
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/menu/vxgplayer-1.8.40.min.js">
+    </script>
+    <link href="../css/vxgplayer-1.8.40.min.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<div class="weadmin-nav">
+			<span class="layui-breadcrumb">
+
+        <a><cite>视频列表</cite></a>
+      </span>
+    <a class="layui-btn layui-btn-sm" style="line-height:1.6em;margin-top:3px;float:right" href="#" title="">
+        <i class="layui-icon" style="line-height:30px">ဂ</i></a>
+</div>
+<div class="weadmin-body">
+    <div class="layui-row">
+        <button class="layui-btn layui-btn-danger layui-col-md1" data-type="getCheckData" id="allstart">开启</button>
+        <button class="layui-btn layui-btn-danger layui-col-md1" data-type="getCheckData" id="allclose">关闭</button>
+        <button class="layui-btn layui-btn-danger layui-col-md1" data-type="getCheckData" id="onlinelook">在线预览</button>
+    </div>
+
+
+
+    <span class="fr" style="line-height:40px">共有数据:<b id="sum"></b>条</span>
+
+    <table class="layui-table">
+        <thead>
+        <tr>
+            <th>
+                <input type="checkbox"  value=""  id="allsel">
+            </th>
+            <th>ID</th>
+            <th>视频名</th>
+            <th>内容</th>
+            <th>错误信息</th>
+            <th>状态</th>
+
+        </thead>
+        <tbody id="tbodys">
+
+        </tbody>
+    </table>
+    <div class="page">
+        <div>
+            <div id="page"></div>
+
+        </div>
+    </div>
+
+    <div class="layui-row layui-col-md12">
+        <div class="vxgplayer allv layui-col-md6" id="vxg_media_player1" url="rtsp://admin:fubang119@172.16.12.195:1554/h264/ch1/main" autostart controls
+             avsync nmf-src="pnacl/Release/media_player.nmf" nmf-path="media_player.nmf" style="display: none; "></div>
+
+        <div class="vxgplayer allv layui-col-md6" id="vxg_media_player2" url="rtsp://admin:fubang119@172.16.12.195:1554/h264/ch1/main" autostart controls
+             avsync nmf-src="pnacl/Release/media_player.nmf" nmf-path="media_player.nmf" style="display: none;"></div>
+
+    </div>
+    <div class="layui-row layui-col-md12">
+    <div class="vxgplayer allv layui-col-md6" id="vxg_media_player3" url="rtsp://admin:fubang119@172.16.12.195:1554/h264/ch1/main" autostart controls
+         avsync nmf-src="pnacl/Release/media_player.nmf" nmf-path="media_player.nmf" style="display: none;"></div>
+    <div class="vxgplayer allv layui-col-md6" id="vxg_media_player4" url="rtsp://admin:fubang119@172.16.12.195:1554/h264/ch1/main" autostart controls
+         avsync nmf-src="pnacl/Release/media_player.nmf" nmf-path="media_player.nmf" style="display: none;"></div>
+    </div>
+</div>
+<script src="../layui/layui.js" charset="utf-8"></script>
+<script src="../js/video/eleDel.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

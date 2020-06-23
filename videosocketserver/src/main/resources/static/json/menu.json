@@ -1,0 +1,25 @@
+{
+	"status": 0,
+	"msg": "ok",
+	"data": [{
+			"id": 1,
+			"name": "视频管理",
+			"icon": "&#xe6b8;",
+			"url": "",
+			"children": [{
+				"id": 2,
+				"name": "筛选直播",
+				"icon": "",
+				"url": "../../pages/send.html"
+			}, {
+				"id": 3,
+				"name": "开启推流",
+				"icon": "",
+				"url": "../../pages/start.html"
+			}]
+		}
+
+
+
+	]
+}
